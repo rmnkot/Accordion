@@ -1,0 +1,1 @@
+Final version with class.js is ready for multiple accordions on one page

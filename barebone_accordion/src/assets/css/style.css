@@ -1,0 +1,36 @@
+.acc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .acc__group {
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .acc__btn, .acc__btn--pointer {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer; }
+    .acc__btn--pointer::before {
+      content: url(../img/acc_pointer_closed.svg);
+      position: absolute;
+      left: 5px;
+      width: 10px; }
+    .acc__btn--pointer[aria-expanded="true"]::before {
+      content: url(../img/acc_pointer_opened.svg); }
+  .acc__expandable {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height ease-in-out 0.5s;
+    transition: height ease-in-out 0.5s;
+    will-change: height; }
+  .acc__wrapper {
+    padding: 1px 0; }
+
+body {
+  margin: 0; }
+
+h1,
+h2 {
+  text-align: center; }
+/*# sourceMappingURL=style.css.map */

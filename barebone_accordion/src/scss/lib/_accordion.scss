@@ -1,0 +1,46 @@
+.acc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__group {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+
+    &--pointer {
+      @extend .acc__btn;
+
+      &::before {
+        content: url(../img/acc_pointer_closed.svg);
+        position: absolute;
+        left: 5px;
+        width: 10px;
+      }
+
+      &[aria-expanded="true"] {
+        &::before {
+          content: url(../img/acc_pointer_opened.svg);
+        }
+      }
+    }
+  }
+
+  &__expandable {
+    height: 0;
+    overflow: hidden;
+    transition: height ease-in-out 0.5s;
+    will-change: height;
+  }
+
+  &__wrapper {
+    padding: 1px 0;
+  }
+}
