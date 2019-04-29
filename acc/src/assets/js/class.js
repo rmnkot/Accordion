@@ -91,17 +91,17 @@ class Accordion {
   };
 
   postEffect(bool) {
-    if (bool == true) {
-      this.func(true);
+    if (bool) {
+      this.helperFunction(true);
       this.container.removeEventListener("transitionend", this.postEffect);
 
     } else {
-      this.func(false);
+      this.helperFunction(false);
       this.container.removeEventListener("transitionend", this.postEffect);
     }
   };
 
-  func(open) {
+  helperFunction(open) {
     if (open) {
       this.container.style.height = `${this.wrapperHeight(this.container)}px`;
     }

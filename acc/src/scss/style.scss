@@ -20,13 +20,13 @@ h1 {
   margin: auto;
 }
 
-.custom__acc {
+.customAcc {
   &__group {
-    &:last-child>.custom__acc__btn {
+    &:last-child>.customAcc__btn {
       border-bottom: none;
     }
 
-    &:last-child>.custom__acc__container {
+    &:last-child>.customAcc__container {
       transition: height ease-in-out 0.5s, border-top-color ease-in-out 0.5s;
       border-bottom: none;
       border-top: 1px solid rgba(222, 184, 135, 0);
@@ -64,7 +64,7 @@ h1 {
   }
 }
 
-.custom__acc__img {
+.customAcc__img {
   width: 100%;
 }
 
